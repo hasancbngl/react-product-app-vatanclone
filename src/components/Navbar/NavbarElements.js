@@ -20,13 +20,9 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
+  &.active, &:hover {
       color: #ffa62b;
   }
-
-  &:hover {
-    color: #ffa62b;
-}
 `;
 
 export const Bars = styled(FaBars)`
@@ -65,9 +61,10 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
+   display: flex;
    border-radius: 4px;
    background: #db6400;
-   padding: 10px 22px; 
+   padding: 10px 20px; 
    color: #f8f1f1; 
    border: none;
    outline: none;
@@ -78,4 +75,10 @@ export const NavBtnLink = styled(Link)`
     filter: brightness(95%);
    }
 }
+`;
+
+export const NavBtnLinkSpan = styled.div`
+   display: flex;
+   margin-left: 5px;
+   font-size: .8rem;
 `;

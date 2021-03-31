@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavBtnLinkSpan} from './NavbarElements';
 import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
@@ -11,6 +11,9 @@ const Navbar = () => {
             </NavLink>
             <Bars />
             <NavMenu>
+            <NavLink to="/home" activeStyle>
+                    Home
+                </NavLink>
                 <NavLink to="/about" activeStyle>
                     About
                 </NavLink>
@@ -22,7 +25,7 @@ const Navbar = () => {
                 </NavLink>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/shopBox"><FaShoppingCart /></NavBtnLink>
+                <NavBtnLink to="/cart"><FaShoppingCart /> <NavBtnLinkSpan>0</NavBtnLinkSpan></NavBtnLink>
             </NavBtn>
         </Nav>
         </>
