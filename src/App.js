@@ -3,9 +3,9 @@ import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Pages/pages';
 import About from './Pages/aboutTest';
-import Products from './Pages/products';
 import DataProvider from './context/context';
 import Details from './context/details/details';
+import Products from './components/Navbar/products/products';
 
 function App() {
   return (

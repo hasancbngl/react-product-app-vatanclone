@@ -8,7 +8,7 @@ export default class DataProvider extends Component {
             {
                 "id":"1",
                 "title": "HUAWEI MATE 20 LITE 64 GB AKILLI TELEFON SİYAH",
-                "src": "https://cdn.vatanbilgisayar.com/UPLOAD/PRODUCT/HUAWEI/thumb/v2-91961.jpg",
+                "src": "https://cdn.vatanbilgisayar.com/UPLOAD/PRODUCT/HUAWEI/thumb/v2-91961_medium.jpg",
                 "brand": "Huawei",
                 "colors": ["red", "black", "white", "gray"],
                 "price": 3199,
@@ -75,9 +75,8 @@ export default class DataProvider extends Component {
     }
 
     render() {
-        const products = this.state;
         return (
-            <DataConText.Provider value={{products}}>
+            <DataConText.Provider value={this.state.mainProducts}>
                 {this.props.children}
             </DataConText.Provider>
         )
