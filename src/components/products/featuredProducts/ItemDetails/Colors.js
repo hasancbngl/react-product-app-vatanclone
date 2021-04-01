@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ColorsButton } from './ItemDetailsStyles';
 
 export default class Colors extends Component {
     render() {
@@ -7,7 +8,7 @@ export default class Colors extends Component {
             <div>
                 {
                 colors.map((color, index) => (
-                    <button key={index} style={{background: color}}>0</button>
+                    <ColorsButton key={index} style={{background: color}}></ColorsButton>
                     ))
                     }
             </div>

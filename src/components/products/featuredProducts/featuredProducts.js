@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import { DataConText } from '../../../context/context';
-import { CardItemDiv, CardLink, ProductsDiv, CardButton, StyledSpan, MainDiv, StyledH2, StyledH3} from './featuredProductsStyling';
+import { CardItemDiv, CardLink, ProductsDiv, CardButton, StyledSpan, MainDiv, StyledH2} from './featuredProductsStyling';
 
 export default class FeaturedProducts extends Component {
     static contextType = DataConText;
