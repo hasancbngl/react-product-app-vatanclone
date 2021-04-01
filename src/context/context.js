@@ -4,10 +4,10 @@ export const DataConText = React.createContext();
 
 export default class DataProvider extends Component {
     state = {
-        mainProducts: [
+        products: [
             {
                 "id":"1",
-                "title": "HUAWEI MATE 20 LITE 64 GB AKILLI TELEFON SİYAH",
+                "title": "HUAWEI MATE 20 LITE 64 GB SİYAH",
                 "src": "https://cdn.vatanbilgisayar.com/UPLOAD/PRODUCT/HUAWEI/thumb/v2-91961_medium.jpg",
                 "brand": "Huawei",
                 "colors": ["red", "black", "white", "gray"],
@@ -18,7 +18,7 @@ export default class DataProvider extends Component {
             },
             {
                 "id":"2",
-                "title": "SAMSUNG GALAXY A51 128 GB AKILLI TELEFON PEMBE",
+                "title": "SAMSUNG GALAXY A51 128 GB PEMBE",
                 "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/TeoriV2-105718_medium.jpg",
                 "brand": "Samsung",
                 "colors": ["red", "black", "white", "gray"],
@@ -29,7 +29,7 @@ export default class DataProvider extends Component {
             },
             {
                 "id":"3",
-                "title": "iPhone 11 64 GB AKILLI TELEFON SİYAH",
+                "title": "iPhone 11 64 GB SİYAH",
                 "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113155_medium.jpg",
                 "brand": "Iphone",
                 "colors": ["red", "black", "white", "gray"],
@@ -76,7 +76,7 @@ export default class DataProvider extends Component {
 
     render() {
         return (
-            <DataConText.Provider value={this.state.mainProducts}>
+            <DataConText.Provider value={this.state.products}>
                 {this.props.children}
             </DataConText.Provider>
         )
