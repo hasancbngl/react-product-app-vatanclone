@@ -6,6 +6,17 @@ export default class DataProvider extends Component {
     state = {
         products: [
             {
+                "id":"0",
+                "title": "XIAOMI REDMI NOTE 9 PRO",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/TeoriV2-107895_medium.jpg",
+                "brand": "Xioami",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 3199,
+                "dprice": 2499,
+                "cur": "TL",
+                "count":1
+            },
+            {
                 "id":"1",
                 "title": "HUAWEI MATE 20 LITE 64 GB SİYAH",
                 "src": "https://cdn.vatanbilgisayar.com/UPLOAD/PRODUCT/HUAWEI/thumb/v2-91961_medium.jpg",
@@ -101,17 +112,6 @@ export default class DataProvider extends Component {
                 "colors": ["red", "black", "white", "gray"],
                 "price": 4876,
                 "dprice": 4121,
-                "cur": "TL",
-                "count":1
-            },
-            {
-                "id":"10",
-                "title": "XIAOMI REDMI NOTE 9 PRO",
-                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/TeoriV2-107895_medium.jpg",
-                "brand": "Xioami",
-                "colors": ["red", "black", "white", "gray"],
-                "price": 3199,
-                "dprice": 2499,
                 "cur": "TL",
                 "count":1
             },

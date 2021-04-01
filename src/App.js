@@ -17,7 +17,7 @@ function App() {
     <Navbar />
     <Switch>
       <Route path="/home" exact>
-        <FeaturedProducts number={7} featuredTitle= "Featured Products" allProducts={allProd} />
+        <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
         DiscountProducts
       </Route>
       <Route path="/products">
