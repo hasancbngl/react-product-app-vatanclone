@@ -6,7 +6,7 @@ border: none;
 outline: none;
 display: block;
 background: #2beeff;
-color: #000;
+color: #ff3c2b;
 padding: 15px 10px;
 cursor: pointer;
 font-size: 1.2rem;

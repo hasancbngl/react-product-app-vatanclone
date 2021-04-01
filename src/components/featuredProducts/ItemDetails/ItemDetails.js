@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../../../context/context';
+import { DataConText } from '../../../context/context';
 import { StyledSpan } from '../featuredProductsStyling';
 import Colors from './Colors';
 import { MainStyle, CardItemDiv, StyledButton} from './ItemDetailsStyles';
