@@ -1,8 +1,27 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const MainDiv = styled.div`
+export const StyledH2 = styled.h2`
+   display: inline-flex;
+   font-size: 1.4rem;
+   text-align: start;
+   margin: 1rem 43vw 1rem 17vw;
+   color: #444;
+`;
+
+export const StyledH3 = styled.h3`
+   display: inline-flex;
+   font-size: 1rem;
    margin-top: 1rem;
+   color: #000;
+   &:hover {
+      cursor:pointer;
+      color:#444;
+   }
+`;
+
+export const MainDiv = styled.div`
+   margin-top: -10px;
    width: 100%;
    display: flex;
    overflow: hidden;
@@ -19,12 +38,12 @@ export const ProductsDiv = styled.div`
       width: 90%;
       grid-gap: 5px;
       grid-template-columns: repeat(1, 1fr);
-  }
+}
 `;
 
 export const CardItemDiv = styled.div`
-   min-width: 15.5rem;
-   min-height: 22rem;
+   min-width: 12.5rem;
+   min-height: 18rem;
    border: 1px solid #ddd;
    overflow: hidden;
    padding: 10px;
@@ -38,8 +57,8 @@ export const CardItemDiv = styled.div`
    }
 
    img {
-      max-width: 15rem;
-      max-height: 15rem;
+      max-width: 10rem;
+      max-height: 10rem;
       width: 100%;
       height: 100%;
       display: block;
@@ -83,7 +102,7 @@ export const CardButton = styled.button`
    cursor: pointer;
    font-size: 1rem;
    letter-spacing: 2px;
-   margin:15px 0;
+   margin:10px 0;
 
    &:hover {
       filter: brightness(98%);

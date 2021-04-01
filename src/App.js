@@ -5,7 +5,7 @@ import Home from './Pages/pages';
 import About from './Pages/aboutTest';
 import DataProvider from './context/context';
 import Details from './context/details/details';
-import Products from './components/Navbar/products/products';
+import FeaturedProducts from './components/products/featuredProducts/featuredProducts';
 
 function App() {
   return (
@@ -13,10 +13,12 @@ function App() {
     <Router>
     <Navbar />
     <Switch>
-      <Route path="/" exact component={Home}/>
+      <Route path="/" exact component={Home}>
+        <FeaturedProducts number={7}/>
+        <FeaturedProducts number={10}/>
+      </Route>
       <Route path="/about" component={About}/>
-      <Route path="/products" component={Products} exact/>
-      <Route path="/products/:id" component={Details}/>
+      <Route path="/:id" component={Details}/>
     </Switch>
     </Router>
     </DataProvider>

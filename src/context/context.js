@@ -71,6 +71,50 @@ export default class DataProvider extends Component {
                 "cur": "TL",
                 "count":1
             },
+            {
+                "id":"7",
+                "title": "SAMSUNG GALAXY NOTE 10 LITE",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/galaxy-note-10-lite-gorseli-106277_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 4876,
+                "dprice": 4121,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"8",
+                "title": "XIAOMI REDMI NOTE 9 PRO",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/TeoriV2-107895_medium.jpg",
+                "brand": "Xioami",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 3199,
+                "dprice": 2499,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"9",
+                "title": "SAMSUNG GALAXY NOTE 10 LITE",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/galaxy-note-10-lite-gorseli-106277_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 4876,
+                "dprice": 4121,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"10",
+                "title": "XIAOMI REDMI NOTE 9 PRO",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/TeoriV2-107895_medium.jpg",
+                "brand": "Xioami",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 3199,
+                "dprice": 2499,
+                "cur": "TL",
+                "count":1
+            },
         ]
     }
 
