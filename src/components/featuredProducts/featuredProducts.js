@@ -7,7 +7,7 @@ export default class FeaturedProducts extends Component {
     static contextType = DataConText;
 
     render() {
-        const products = this.context;
+        const products = this.context.products;
         let items;
         return (
             <>

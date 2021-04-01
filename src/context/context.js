@@ -115,12 +115,206 @@ export default class DataProvider extends Component {
                 "cur": "TL",
                 "count":1
             },
-        ]
-    }
+        ],
+        bestSellerProducts: [
+            {
+                "id":"0",
+                "title": "HUAWEI Y6 2019 32 GB AKILLI TELEFON SAFİR MAVİSİ",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/huawei/thumb/huawei-y6-2019-gorseli-93998_medium.jpg",
+                "brand": "Huawei",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 1888,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"1",
+                "title": "SAMSUNG GALAXY A21S 128 GB AKILLI TELEFON SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/118425_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"2",
+                "title": "GENERAL MOBİLE GM20 TEK SİM AKILLI TELEFON PARLAK SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/general-mobile/thumb/general-mobile-gm20-gorseli-108983_medium.jpg",
+                "brand": "GM",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 1666,
+                "dprice": 1333,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"3",
+                "title": "ASUS X543UA CORE İ3 6100U",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/asus/thumb/114657_medium.jpg",
+                "brand": "ASSus",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 4222,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"4",
+                "title": "SAMSUNG GALAXY TAB A7 SM-T500NZAATUR",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/110034_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"5",
+                "title": "SAMSUNG GALAXY A21S 128 GB AKILLI TELEFON SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/118425_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"6",
+                "title": "Apple Watch Series 6 GPS",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/109346-gorsel-1_medium.jpg",
+                "brand": "Apple",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"7",
+                "title": "PHILIPS 55PUS7805 55139 CM 4K UHD SMART TV",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/philips/thumb/philips-55pus7805-gorseli-108366_medium.jpg",
+                "brand": "PHILIPS",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"8",
+                "title": "VESTEL 58U9500 58'' 146 CM 4K",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/vestel/thumb/TeoriV2-105825-3_medium.jpg",
+                "brand": "Vestel",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"9",
+                "title": "ASUS 23,8VG249Q TUF GAMING ",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/118425_medium.jpg",
+                "brand": "Asus",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"10",
+                "title": "HUAWEI Y6 2019 32 GB AKILLI TELEFON SAFİR MAVİSİ",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/huawei/thumb/huawei-y6-2019-gorseli-93998_medium.jpg",
+                "brand": "Huawei",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 1888,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"11",
+                "title": "SAMSUNG GALAXY A21S 128 GB AKILLI TELEFON SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/118425_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"12",
+                "title": "GENERAL MOBİLE GM20 TEK SİM AKILLI TELEFON PARLAK SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/general-mobile/thumb/general-mobile-gm20-gorseli-108983_medium.jpg",
+                "brand": "GM",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 1666,
+                "dprice": 1333,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"13",
+                "title": "ASUS X543UA CORE İ3 6100U",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/asus/thumb/114657_medium.jpg",
+                "brand": "ASSus",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 4222,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"14",
+                "title": "SAMSUNG GALAXY TAB A7 SM-T500NZAATUR",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/110034_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"15",
+                "title": "SAMSUNG GALAXY A21S 128 GB AKILLI TELEFON SİYAH",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/118425_medium.jpg",
+                "brand": "Samsung",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+            {
+                "id":"16",
+                "title": "Apple Watch Series 6 GPS",
+                "src": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/109346-gorsel-1_medium.jpg",
+                "brand": "Apple",
+                "colors": ["red", "black", "white", "gray"],
+                "price": 2777,
+                "dprice": 1300,
+                "cur": "TL",
+                "count":1
+            },
+        ],
+        cart: [],
+    };
+
+    addToCart = () => {
+
+    };
 
     render() {
         return (
-            <DataConText.Provider value={this.state.products}>
+            <DataConText.Provider value={this.state}>
                 {this.props.children}
             </DataConText.Provider>
         )

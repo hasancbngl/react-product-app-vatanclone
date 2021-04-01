@@ -11,9 +11,9 @@ const Sections = () => {
     const allProd = <Link to="/products"> <StyledH3>All Featured Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
     return <Switch>
         <Route path="/home" exact>
-            Image Gallery Slider
+            <div>Image Gallery Slider</div>
             <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
-            DiscountProducts
+            BestSellerProducts
         </Route>
         <Route path="/products">
             <FeaturedProducts number={100}/>
