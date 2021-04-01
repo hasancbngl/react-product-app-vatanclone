@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { DataConText } from '../../../../context/context';
 import { CardButton, StyledSpan } from '../featuredProductsStyling';
 import Colors from './Colors';
+import { MainStyle, CardItemDiv, StyledItemRow } from './ItemDetailsStyles';
 
 export default class ItemDetails extends Component {
     static contextType = DataConText;
@@ -28,14 +29,14 @@ export default class ItemDetails extends Component {
     render() {
         const product = this.state.product;
         return (
-            <>
+            <MainStyle>
         {
             product.map(item => (
-                <CardItemStyleDiv key={item.id}>
+                <CardItemDiv key={item.id}>
                     <img src={item.src} alt={item.title} />
-                    <ItemStyleDiv>
+                    <>
                         <StyledItemRow>
-                            <h2>{item.title}</h2>
+                            <h3>{item.title}</h3>
                             <StyledSpan >₺{item.price}</StyledSpan>
                         </StyledItemRow>
                         <Colors colors={item.colors}/>
@@ -44,11 +45,11 @@ export default class ItemDetails extends Component {
                         <Link to={`/cart`}>
                             <CardButton>Add to Card</CardButton>
                         </Link>
-                    </ItemStyleDiv>
-                </CardItemStyleDiv>
+                    </>
+                </CardItemDiv>
             ))
         }
-        </>
+        </MainStyle>
         )
     }
 }
