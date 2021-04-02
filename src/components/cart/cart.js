@@ -24,7 +24,11 @@ export default class Cart extends Component {
                 <Colors colors={item.colors}/>
                 <p>{item.brand}</p>
                 <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut. Ut posuere fermentum elit, eget aliquet ante consectetur quis. Quisque magna ipsum, molestie ac elit eu, tempor dictum urna.</p>
-                
+                <div>
+                    <button onClick={()=> this.context.reduceAmount(item.id)}>-</button>
+                    <span>{item.count}</span>
+                    <button onClick={()=> this.context.increaseAmount(item.id)}>+</button>
+                </div>
                 </>
             </CardItemDiv>
             ))

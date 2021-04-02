@@ -308,7 +308,7 @@ export default class DataProvider extends Component {
         cart: [],
     };
 
-    addToCart = (id) => {
+    addToCart = id => {
         const {products, cart, bestSellerProducts} = this.state;
         const el = id <10 ? products : bestSellerProducts;
         const check = cart.every(item => {
@@ -325,7 +325,26 @@ export default class DataProvider extends Component {
         } else {
             alert("The product is already added to the cart");
         }
-    };
+    }
+
+    reduceAmount= id => {
+        const { cart } = this.state;
+        cart.forEach(item => {
+            if(item.id===id) {
+                //if count is one don't reduce
+                item.count === 1 ? item.count = 1 : item.count -= 1;
+            }
+        });
+        this.setState({cart: cart});
+    }
+
+    increaseAmount= id => {
+         const { cart } = this.state;
+        cart.forEach(item => {
+            if(item.id===id) item.count += 1;
+        });
+        this.setState({cart: cart});
+    }
 
     render() {
         return (

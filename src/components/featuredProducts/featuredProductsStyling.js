@@ -7,7 +7,6 @@ export const Header = styled.div`
    margin: 1rem 0 1rem 17vw;
    grid-gap:33vw;
    @media screen and (max-width: 700px) {
-
       width: 90%;
       grid-gap: 7vw;
       grid-template-columns: repeat(2, 1fr);
