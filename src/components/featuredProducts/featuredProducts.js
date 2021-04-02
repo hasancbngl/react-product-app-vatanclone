@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { DataConText } from '../../context/context';
-import { CardItemDiv, CardLink, ProductsDiv, CardButton, StyledSpan, MainDiv, StyledH2} from './featuredProductsStyling';
+import { CardItemDiv, CardLink, ProductsDiv, CardButton, StyledSpan, MainDiv, StyledH2, Header} from './featuredProductsStyling';
 
 export default class FeaturedProducts extends Component {
     static contextType = DataConText;
@@ -11,8 +11,10 @@ export default class FeaturedProducts extends Component {
         let items;
         return (
             <>
+            <Header>
              <StyledH2>{this.props.featuredTitle}</StyledH2>
              {this.props.allProducts}
+             </Header>
         <MainDiv>
         <ProductsDiv>
             {

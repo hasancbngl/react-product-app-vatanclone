@@ -1,19 +1,28 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const Header = styled.div`
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   margin: 1rem 0 1rem 17vw;
+   grid-gap:33vw;
+   @media screen and (max-width: 700px) {
+
+      width: 90%;
+      grid-gap: 7vw;
+      grid-template-columns: repeat(2, 1fr);
+}
+`;
+
 export const StyledH2 = styled.h2`
-   display: inline-flex;
    font-size: 1.4rem;
-   text-align: start;
-   margin: 1rem 43vw 1rem 17vw;
    color: #444;
 `;
 
 export const StyledH3 = styled.h3`
-   display: inline-flex;
    font-size: 1rem;
-   margin-top: 1rem;
    color: #000;
+   display: flex;
    &:hover {
       cursor:pointer;
       color:#444;
@@ -22,11 +31,8 @@ export const StyledH3 = styled.h3`
 
 export const MainDiv = styled.div`
    margin-top: -10px;
-   width: 100%;
-   display: flex;
-   overflow: hidden;
-   justify-content: space-around;
-   flex-wrap: wrap;
+   width: 68vw;
+   margin: auto;
 `;
 
 export const ProductsDiv = styled.div`

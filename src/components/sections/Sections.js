@@ -6,17 +6,19 @@ import FeaturedProducts from '../featuredProducts/featuredProducts';
 import About from '../../Pages/aboutTest';
 import ItemDetails from '../featuredProducts/ItemDetails/ItemDetails';
 import Cart from '../cart/cart';
+import BestSellerProducts from '../bestSellerProducts/BestSellerProducts';
 
 const Sections = () => {
-    const allProd = <Link to="/products"> <StyledH3>All Featured Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
+    const allProd = <Link to="/products"> <StyledH3>All Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
     return <Switch>
         <Route path="/home" exact>
             <div>Image Gallery Slider</div>
             <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
-            BestSellerProducts
+            <BestSellerProducts number={13} featuredTitle= "Best Seller Products" allProducts={allProd} />
         </Route>
         <Route path="/products">
-            <FeaturedProducts number={100}/>
+            <FeaturedProducts number={100} featuredTitle= "All Products"/>
+            <BestSellerProducts number={100} />
         </Route>
         <Route path="/about"> <About /> </Route>
         <Route path="/cart"> <Cart /> </Route>
