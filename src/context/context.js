@@ -305,7 +305,7 @@ export default class DataProvider extends Component {
                 "count":1
             },
         ],
-        cart: []
+        cart: [],
     };
 
     addToCart = (id) => {
@@ -315,9 +315,9 @@ export default class DataProvider extends Component {
             return product.id === id;
         });
         this.setState({
-            cart: [...cart, ...data]
+            cart: [...cart,...data]
         });
-        console.log(this.state.cart);
+        console.log(cart);
     };
 
     render() {
