@@ -30,7 +30,7 @@ export const StyledH3 = styled.h3`
 `;
 
 export const MainDiv = styled.div`
-   margin-top: -10px;
+   margin-top: -15px;
    width: 68vw;
    margin: auto;
 `;
@@ -48,8 +48,8 @@ export const ProductsDiv = styled.div`
 `;
 
 export const CardItemDiv = styled.div`
-   min-width: 12.5rem;
-   min-height: 18rem;
+   min-width: 10rem;
+   min-height: 16rem;
    border: 1px solid #ddd;
    overflow: hidden;
    padding: 10px;
@@ -63,8 +63,8 @@ export const CardItemDiv = styled.div`
    }
 
    img {
-      max-width: 10rem;
-      max-height: 10rem;
+      max-width: 8rem;
+      max-height: 8rem;
       width: 100%;
       height: 100%;
       object-fit: cover;

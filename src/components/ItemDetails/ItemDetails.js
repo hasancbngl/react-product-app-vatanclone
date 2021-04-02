@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../../context/context';
-import { StyledSpan } from '../featuredProductsStyling';
+import { DataConText } from '../../context/context';
+import {StyledSpan } from '../featuredProducts/featuredProductsStyling';
 import Colors from './Colors';
-import { MainStyle, CardItemDiv, StyledButton} from './ItemDetailsStyles';
+import { CardItemDiv, MainStyle, StyledButton} from './ItemDetailsStyles';
 
 export default class ItemDetails extends Component {
     static contextType = DataConText;
@@ -42,7 +42,7 @@ export default class ItemDetails extends Component {
                         <Colors colors={item.colors}/>
                         <p>{item.brand}</p>
                         <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut. Ut posuere fermentum elit, eget aliquet ante consectetur quis. Quisque magna ipsum, molestie ac elit eu, tempor dictum urna. Duis vel laoreet nulla. Nullam eget mollis urna. Etiam scelerisque lacus consectetur massa iaculis, sit amet vehicula ligula pretium. Pellentesque sollicitudin et risus sit amet mollis. Ut convallis nibh id turpis efficitur, a eleifend lorem cursus.</p>
-                        <Link to={`/cart`}>
+                        <Link to={`/cart`} onClick={()=> this.context.addToCart(item.id)}>
                             <StyledButton>Add to Card</StyledButton>
                         </Link>
                     </>

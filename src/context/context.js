@@ -311,13 +311,20 @@ export default class DataProvider extends Component {
     addToCart = (id) => {
         const {products, cart, bestSellerProducts} = this.state;
         const el = id <10 ? products : bestSellerProducts;
-        const data = el.filter(product => {
-            return product.id === id;
+        const check = cart.every(item => {
+            return item.id !== id;
         });
-        this.setState({
-            cart: [...cart,...data]
-        });
-        console.log(cart);
+
+        if(check) {
+            const data = el.filter(product => {
+                return product.id === id;
+            });
+            this.setState({
+                cart: [...cart,...data]
+            });
+        } else {
+            alert("The product is already added to the cart");
+        }
     };
 
     render() {

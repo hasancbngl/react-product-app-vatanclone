@@ -4,7 +4,7 @@ import { StyledSpan, StyledH3 } from '../featuredProducts/featuredProductsStylin
 import { MdArrowForward } from 'react-icons/md';
 import FeaturedProducts from '../featuredProducts/featuredProducts';
 import About from '../../Pages/aboutTest';
-import ItemDetails from '../featuredProducts/ItemDetails/ItemDetails';
+import ItemDetails from '../ItemDetails/ItemDetails';
 import Cart from '../cart/cart';
 import BestSellerProducts from '../bestSellerProducts/BestSellerProducts';
 import Navbar from '../Navbar/Navbar';
@@ -33,7 +33,7 @@ export default class Sections extends Component {
                 </Route>
                 <Route path="/about"> <About /> </Route>
                 <Route path="/cart"> <Cart /> </Route>
-                <Route path="/:id"> <ItemDetails /></Route>
+                <Route path="/:id" component={ItemDetails}/>
             </Switch>
         </Router>
         );

@@ -35,8 +35,8 @@ export const ColorsButton = styled.button`
 export const MainStyle = styled.div`
    display: flex;
    margin: auto;
-   margin-top: 10vh;
-   max-width: 40vw;
+   margin-top: 7vh;
+   max-width: 38vw;
    font-size:1rem;
 
    @media screen and (max-width: 700px) {
@@ -47,8 +47,8 @@ export const MainStyle = styled.div`
 `;
 
 export const CardItemDiv = styled.div`
-   min-width: 17.5rem;
-   min-height: 23rem;
+   min-width: 15.5rem;
+   min-height: 21rem;
    border: 1px solid #ddd;
    overflow: hidden;
    padding: 10px;
@@ -62,8 +62,8 @@ export const CardItemDiv = styled.div`
    }
 
    img {
-      max-width: 18rem;
-      max-height: 18rem;
+      max-width: 16rem;
+      max-height: 16rem;
       width: 100%;
       height: 100%;
       object-fit: cover;
