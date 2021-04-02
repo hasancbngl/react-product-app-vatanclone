@@ -36,7 +36,7 @@ const Sections = () => {
                 </Route>
                 <Route path="/about"> <About /> </Route>
                 <Route path="/cart"> <Cart /> </Route>
-                <Route path="/:id"> <ItemDetails /></Route>
+                <Route path="/:id" component={ItemDetails}/>
             </Switch>
         </Router>
     );
