@@ -7,7 +7,7 @@ export default class FeaturedProducts extends Component {
     static contextType = DataConText;
 
     render() {
-        const products = this.context.products;
+        const products = this.context.state.products;
         let items;
         return (
             <>
@@ -31,7 +31,7 @@ export default class FeaturedProducts extends Component {
                             </CardLink>
                             </h3>
                             <StyledSpan >₺{product.price}</StyledSpan>
-                            <CardButton>Add to Card</CardButton>
+                            <CardButton onClick={()=> this.context.addToCart(product.id)}>Add to Card</CardButton>
                         </>
                     </CardItemDiv>
                     return items;

@@ -18,7 +18,7 @@ const Sections = () => {
         </Route>
         <Route path="/products">
             <FeaturedProducts number={100} featuredTitle= "All Products"/>
-            <BestSellerProducts number={100} />
+            <BestSellerProducts number={100} featuredTitle= "" />
         </Route>
         <Route path="/about"> <About /> </Route>
         <Route path="/cart"> <Cart /> </Route>

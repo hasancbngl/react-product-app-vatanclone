@@ -7,7 +7,7 @@ export default class BestSellerProducts extends Component {
     static contextType = DataConText;
 
     render() {
-        const products = this.context.bestSellerProducts;
+        const products = this.context.state.bestSellerProducts;
         let items;
         return (
             <>
@@ -31,7 +31,7 @@ export default class BestSellerProducts extends Component {
                             </CardLink>
                             </h3>
                             <StyledSpan >₺{product.price}</StyledSpan>
-                            <CardButton>Add to Card</CardButton>
+                            <CardButton onClick={()=> this.context.addToCart(product.id)}>Add to Card</CardButton>
                         </>
                     </CardItemDiv>
                     return items;

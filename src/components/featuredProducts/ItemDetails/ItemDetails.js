@@ -14,7 +14,7 @@ export default class ItemDetails extends Component {
     getProduct=() => {
         const id = this.props.match.params.id;
         if(id) {
-            const res = this.context.products;
+            const res = id <10 ? this.context.state.products : this.context.state.bestSellerProducts;
             const data = res.filter(item=> {
                 return item.id === id;
             });
