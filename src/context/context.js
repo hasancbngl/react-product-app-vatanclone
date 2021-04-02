@@ -322,7 +322,9 @@ export default class DataProvider extends Component {
 
     render() {
         return (
-            <DataConText.Provider value={this}>
+            <DataConText.Provider value={{
+                ...this
+            }}>
                 {this.props.children}
             </DataConText.Provider>
         )
