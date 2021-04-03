@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../context/Context';
+import { DataConText } from '../../container/context/Context';
 import { CardItemDiv, CardLink, ProductsDiv, CardButton, StyledSpan, MainDiv, StyledH2, Header} from './featuredProductsStyling';
 
 export default class FeaturedProducts extends Component {

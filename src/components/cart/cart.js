@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {CardItemDiv} from '../ItemDetails/ItemDetailsStyles';
+import {CardItemDiv} from '../../container/ItemDetails/ItemDetailsStyles';
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../context/Context';
+import { DataConText } from '../../container/context/Context';
 import {StyledH2, StyledSpan } from '../featuredProducts/featuredProductsStyling';
-import Colors from '../ItemDetails/Colors';
+import Colors from '../colorsComponent/Colors';
 import { CountButton, TotalDiv, CountSpan, DeleteButton } from './cartStyle';
 
 export default class Cart extends Component {

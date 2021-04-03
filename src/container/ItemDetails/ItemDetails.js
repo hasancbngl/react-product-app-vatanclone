@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../context/Context';
-import {StyledSpan } from '../featuredProducts/featuredProductsStyling';
-import Colors from './Colors';
+import { DataConText } from '../context/Context';
+import {StyledSpan } from '../../components/featuredProducts/featuredProductsStyling';
+import Colors from '../../components/colorsComponent/Colors';
 import { CardItemDiv, MainStyle, StyledButton} from './ItemDetailsStyles';
 
 export default class ItemDetails extends Component {

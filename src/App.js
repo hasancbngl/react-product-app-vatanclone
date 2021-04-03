@@ -1,5 +1,5 @@
 import './App.css';
-import DataProvider from './context/Context';
+import DataProvider from './container/context/Context';
 import Sections from './components/sections/Sections';
 
 function App() {
