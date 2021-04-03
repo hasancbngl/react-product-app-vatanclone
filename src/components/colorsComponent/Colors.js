@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ColorsButton } from '../../container/ItemDetails/ItemDetailsStyles';
+import { ColorsButton } from './ColorsStyles';
 
 export default class Colors extends Component {
     render() {

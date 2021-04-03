@@ -47,7 +47,7 @@ export const NavMenu = styled.div`
   margin-right: -22px;
 
   @media screen and (max-width: 750px) {
-      display: block;
+      display: none;
   }
 `;
 

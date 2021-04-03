@@ -38,12 +38,13 @@ export const DeleteButton = styled.div`
 `;
 
 export const TotalDiv = styled.div`
+   position: relative;
    width: 100%;
    height: 50px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   overflow: hidden;
+   overflow-x: hidden;
 
    a {
       text-decoration: none;

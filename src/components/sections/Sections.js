@@ -32,10 +32,16 @@ export default class Sections extends Component {
                         <FeaturedProducts number={100} featuredTitle= "All Products"/>
                         <BestSellerProducts number={100} featuredTitle= "" />
                 </Route>
+                <Route path="/loginregister">
+                    <StyledH2 style={{textAlign: "center"}}>Register/ Login Page</StyledH2>
+                </Route>
                 <Route path="/cart"> <Cart /> </Route>
                 <Route path="/payment" component={Payment}/>
                 <Route path="/:id" component={ItemDetails}/>
-                <Route path="/"> <StyledH2 style={{textAlign: "center"}}>Welcome to my page</StyledH2> </Route>
+                <Route path="/">
+                     <StyledH2 style={{textAlign: "center"}}>Welcome to my page</StyledH2>
+                     <StyledH3 style={{textAlign: "center", display: "block"}}>Happy Shopping</StyledH3>
+                </Route>
             </Switch>
         </Router>
         );

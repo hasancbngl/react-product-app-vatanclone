@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {CardItemDiv} from '../../container/ItemDetails/ItemDetailsStyles';
 import { Link } from 'react-router-dom';
 import { DataConText } from '../../container/context/Context';
-import {StyledH2, StyledSpan } from '../featuredProducts/featuredProductsStyling';
+import {CardLink, StyledH2, StyledSpan } from '../featuredProducts/featuredProductsStyling';
 import Colors from '../colorsComponent/Colors';
 import { CountButton, TotalDiv, CountSpan, DeleteButton } from './cartStyle';
 
@@ -26,7 +26,11 @@ export default class Cart extends Component {
                         <img src={item.src} alt={item.title} />
                         <>
                         <div>
-                            <h3>{item.title}</h3>
+                            <h3>
+                            <CardLink to={`/${item.id}`}>
+                                {item.title}
+                            </CardLink>
+                            </h3>
                             <StyledSpan >₺{item.price * item.count}</StyledSpan>
                         </div>
                         <Colors colors={item.colors}/>

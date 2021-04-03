@@ -6,11 +6,18 @@ export const Header = styled.div`
    grid-template-columns: repeat(2, 1fr); 
    margin: 1rem 0 1rem 17vw;
    grid-gap:33vw;
-   @media screen and (max-width: 700px) {
+
+   @media screen and (max-width: 600px) {
+      width: 90%;
+      grid-gap: 7vw;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   @media (min-width: 601px) and (max-width: 1000px) {
       width: 90%;
       grid-gap: 7vw;
       grid-template-columns: repeat(2, 1fr);
-}
+    }
 `;
 
 export const StyledH2 = styled.h2`
@@ -38,11 +45,16 @@ export const ProductsDiv = styled.div`
    display:grid;
    grid-gap: 10px;
    grid-template-columns: repeat(3, 1fr);
-
-   @media screen and (max-width: 700px) {
-      width: 90%;
-      grid-gap: 5px;
-      grid-template-columns: repeat(1, 1fr);
+   
+   @media screen and (max-width: 600px) {
+   width: 90%;
+   grid-gap: 5px;
+   grid-template-columns: repeat(1,1fr);
+}
+   @media (min-width: 601px) and (max-width: 1000px) {
+   width: 90%;
+   grid-gap: 7vw;
+   grid-template-columns: repeat(2, 1fr);
 }
 `;
 
