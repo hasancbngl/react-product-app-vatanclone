@@ -17,11 +17,16 @@ filter: brightness(90%);
    filter: brightness(93%);
    transform: translateY(-2%);
 }
+
+@media screen and (max-width: 700px) {
+   padding: 7.5px 5px;
+   font-size: 1rem;
+}
 `;
 
 export const ColorsButton = styled.button`
-   width: 30px;
-   height: 30px;
+   width: 1.5vw;
+   height: 1.5vw;
    border: 1px solid #333;
    cursor:pointer;
    outline: none;
@@ -47,13 +52,14 @@ export const MainStyle = styled.div`
 `;
 
 export const CardItemDiv = styled.div`
-   min-width: 15.5rem;
-   min-height: 21rem;
+   width:40vw;
+   position: relative;
    border: 1px solid #ddd;
    overflow: hidden;
-   padding: 10px;
+   padding: 7.5px;
    box-shadow: 2px 8px 20px #bbb;
-   margin: 10px;
+   margin: auto;
+   margin-top:7.5px;
    transition: .5s linear;
 
    &:hover {
@@ -62,20 +68,19 @@ export const CardItemDiv = styled.div`
    }
 
    img {
-      max-width: 16rem;
-      max-height: 16rem;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 25vw;
+      height: 20vh;
+      object-fit: contain;
       display:flex;
       margin: auto;
    }
 
    h3 {
       text-align: center;
-      margin: 10px 0;
-      letter-spacing: 2px;
-      font-size: 1.4rem;
+      margin: 7px 0;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      overflow: hidden;
    }
 
    a {
@@ -83,21 +88,28 @@ export const CardItemDiv = styled.div`
    }
 
    p {
-       line-height: 1.5;
+       line-height: 1.1;
        margin: 15px 0;
+       overflow: hidden;
    }
 
    @media screen and (max-width: 700px) {
+      width: 75%;
+      padding: 5px;
+      box-shadow: 1px 4px 10px #bbb;
+      margin: auto;
+      margin-top:5px;
+
     h3 {
         text-align: center;
-        margin: 5px 0;
+        margin: 3px 0;
         letter-spacing: 1.2px;
-        font-size: 1.1rem;
+        font-size: 1rem;
      }
 
      p {
-        line-height: 1.2;
-        margin: 7.5px 0;
+        line-height: 1;
+        margin: 5px 0;
     }
 }
 `;

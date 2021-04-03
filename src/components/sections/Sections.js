@@ -3,13 +3,13 @@ import { Switch, Route, Link} from 'react-router-dom';
 import { StyledSpan, StyledH3 } from '../featuredProducts/featuredProductsStyling';
 import { MdArrowForward } from 'react-icons/md';
 import FeaturedProducts from '../featuredProducts/featuredProducts';
-import About from '../../Pages/aboutTest';
 import ItemDetails from '../ItemDetails/ItemDetails';
 import Cart from '../cart/cart';
 import BestSellerProducts from '../bestSellerProducts/BestSellerProducts';
 import Navbar from '../Navbar/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {DataConText} from '../../context/context';
+import Payment from '../payment/Payment';
 
 
 export default class Sections extends Component {
@@ -31,8 +31,8 @@ export default class Sections extends Component {
                         <FeaturedProducts number={100} featuredTitle= "All Products"/>
                         <BestSellerProducts number={100} featuredTitle= "" />
                 </Route>
-                <Route path="/about"> <About /> </Route>
                 <Route path="/cart"> <Cart /> </Route>
+                <Route path="/payment" component={Payment}/>
                 <Route path="/:id" component={ItemDetails}/>
             </Switch>
         </Router>

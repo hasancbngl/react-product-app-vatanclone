@@ -306,6 +306,7 @@ export default class DataProvider extends Component {
             },
         ],
         cart: [],
+        totalPrice: 0
     };
 
     addToCart = id => {
@@ -325,7 +326,7 @@ export default class DataProvider extends Component {
         } else {
             alert("The product is already added to the cart");
         }
-    }
+    };
 
     reduceAmount= id => {
         const { cart } = this.state;
@@ -336,7 +337,8 @@ export default class DataProvider extends Component {
             }
         });
         this.setState({cart: cart});
-    }
+        this.calculateTotalPrice();
+    };
 
     increaseAmount= id => {
          const { cart } = this.state;
@@ -344,7 +346,28 @@ export default class DataProvider extends Component {
             if(item.id===id) item.count += 1;
         });
         this.setState({cart: cart});
-    }
+        this.calculateTotalPrice();
+    };
+
+    calculateTotalPrice = () => {
+        const { cart } = this.state;
+        const res = cart.reduce((prev, item) => {
+            return prev + (item.price * item.count);
+        }, 0);
+        this.setState({totalPrice: res});
+    };
+
+    removeProduct = id => {
+        if(window.confirm("Are you sure? This product will be deleted.")) {
+            const { cart } = this.state;
+            cart.forEach((item, index) => {
+                if(item.id===id) {
+                    cart.splice(index, 1);
+                }
+            });
+            this.setState({cart: cart});
+        }
+    };
 
     render() {
         return (

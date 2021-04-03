@@ -1,39 +1,52 @@
 import React, { Component } from 'react';
-import {CardItemDiv, StyledButton} from '../ItemDetails/ItemDetailsStyles';
+import {CardItemDiv} from '../ItemDetails/ItemDetailsStyles';
 import { Link } from 'react-router-dom';
 import { DataConText } from '../../context/context';
-import {StyledSpan } from '../featuredProducts/featuredProductsStyling';
+import {StyledH2, StyledSpan } from '../featuredProducts/featuredProductsStyling';
 import Colors from '../ItemDetails/Colors';
-import { MainDiv } from './cartStyle';
+import { CountButton, TotalDiv, CountSpan, DeleteButton } from './cartStyle';
 
 export default class Cart extends Component {
     static contextType = DataConText;
+
+    componentDidMount() {
+        this.context.calculateTotalPrice();
+    }
+
     render() {
         const cart = this.context.state.cart;
-        return (
-        <MainDiv>
-            {
-                cart.map(item => (
-                <CardItemDiv key={item.id}>
-                <img src={item.src} alt={item.title} />
+         if(cart.length===0) {
+           return <StyledH2 style={{textAlign:"center"}}>No product!</StyledH2>
+        } else {
+            return ( 
                 <>
-                <div>
-                    <h3>{item.title}</h3>
-                    <StyledSpan >₺{item.price}</StyledSpan>
-                </div>
-                <Colors colors={item.colors}/>
-                <p>{item.brand}</p>
-                <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut. Ut posuere fermentum elit, eget aliquet ante consectetur quis. Quisque magna ipsum, molestie ac elit eu, tempor dictum urna.</p>
-                <div>
-                    <button onClick={()=> this.context.reduceAmount(item.id)}>-</button>
-                    <span>{item.count}</span>
-                    <button onClick={()=> this.context.increaseAmount(item.id)}>+</button>
-                </div>
+                    {
+                        cart.map(item => (
+                        <CardItemDiv key={item.id}>
+                        <img src={item.src} alt={item.title} />
+                        <>
+                        <div>
+                            <h3>{item.title}</h3>
+                            <StyledSpan >₺{item.price * item.count}</StyledSpan>
+                        </div>
+                        <Colors colors={item.colors}/>
+                        <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut. Ut posuere fermentum elit, eget aliquet ante consectetur quis. Quisque magna ipsum, molestie ac elit eu, tempor dictum urna.</p>
+                        <>
+                            <CountButton onClick={()=> this.context.reduceAmount(item.id)}>-</CountButton>
+                            <CountSpan>{item.count}</CountSpan>
+                            <CountButton onClick={()=> this.context.increaseAmount(item.id)}>+</CountButton>
+                        </>
+                        </>
+                        <DeleteButton onClick={()=> this.context.removeProduct(item.id)}>X</DeleteButton>
+                    </CardItemDiv>
+                    ))
+                    }
+                    <TotalDiv>
+                    <Link to="/payment">Payment</Link>
+                    <h3>Total:₺ {this.context.state.totalPrice}</h3>
+                   </TotalDiv>
                 </>
-            </CardItemDiv>
-            ))
-            }
-        </MainDiv>
-        )
+                )
+        }
     }
 }
