@@ -1,13 +1,14 @@
 .slider {
-    margin: 2vh 2vw;
+    margin: 1.5vh 2vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1vw;
 }
 
 .image {
-    width: 70vw;
+    width: 65vw;
     height: 100%;
     border-radius: 0.5vw;
 }

@@ -124,4 +124,8 @@ export const CardButton = styled.button`
       filter: brightness(98%);
       color: #ffa62b;
    }
+
+   @media screen and (max-width: 700px) {
+      margin:5px 0;
+  }
 `;
