@@ -10,6 +10,8 @@ import Navbar from '../Navbar/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {DataConText} from '../../container/context/Context';
 import Payment from '../payment/Payment';
+import ImageSlider from '../imageSlider/ImageSlider';
+import { ImageSliderData } from '../imageSlider/ImageSliderData';
 
 
 export default class Sections extends Component {
@@ -23,7 +25,7 @@ export default class Sections extends Component {
             <Navbar productNumber={productNumber} />
             <Switch>
                 <Route path="/home" exact>
-                    <div>Image Gallery Slider</div>
+                    <ImageSlider slides={ImageSliderData}/>
                     <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
                     <BestSellerProducts number={13} featuredTitle= "Best Seller Products" allProducts={allProd} />
                     <div>Footer</div>

@@ -6,7 +6,7 @@ const Navbar = (props) => {
     return <>
     <Nav>
         <NavLink to="/">
-            <h1>HasEl</h1>
+            <h1>VatanClone</h1>
         </NavLink>
         <Bars />
         <NavMenu>

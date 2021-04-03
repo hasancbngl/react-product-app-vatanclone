@@ -15,4 +15,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Note: The app clone some features of vatanbilgisayar. This project done for learning purposes.
 
-Images taken from [VatanBilgisayar](https://vatanbilgisayar.com)
+Image url's from [VatanBilgisayar](https://vatanbilgisayar.com)
