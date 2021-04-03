@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {CardItemDiv} from '../ItemDetails/ItemDetailsStyles';
 import { Link } from 'react-router-dom';
-import { DataConText } from '../../context/context';
+import { DataConText } from '../../context/Context';
 import {StyledH2, StyledSpan } from '../featuredProducts/featuredProductsStyling';
 import Colors from '../ItemDetails/Colors';
 import { CountButton, TotalDiv, CountSpan, DeleteButton } from './cartStyle';

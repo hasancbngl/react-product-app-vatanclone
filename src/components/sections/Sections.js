@@ -8,7 +8,7 @@ import Cart from '../cart/cart';
 import BestSellerProducts from '../bestSellerProducts/BestSellerProducts';
 import Navbar from '../Navbar/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
-import {DataConText} from '../../context/context';
+import {DataConText} from '../../context/Context';
 import Payment from '../payment/Payment';
 
 

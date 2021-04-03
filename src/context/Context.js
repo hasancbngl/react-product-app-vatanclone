@@ -366,8 +366,25 @@ export default class DataProvider extends Component {
                 }
             });
             this.setState({cart: cart});
+            this.calculateTotalPrice();
         }
     };
+
+    componentDidUpdate() {
+        localStorage.setItem('dataCart', JSON.stringify(this.state.cart));
+        localStorage.setItem('dataTotal', JSON.stringify(this.state.totalPrice));
+    };
+
+    componentDidMount() {
+        const dataCart = JSON.parse(localStorage.getItem('dataCart'));
+        const dataTotal = JSON.parse(localStorage.getItem('dataTotal'));
+        if(dataCart!==null) {
+            this.setState({cart: dataCart});
+        }
+        if(dataTotal!==null) {
+            this.setState({totalPrice: dataTotal});
+        }
+    }
 
     render() {
         return (
