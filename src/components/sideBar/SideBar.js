@@ -12,18 +12,18 @@ const SideBar = ({ isOpen, toggle, productNumber }) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="/home" onClick={toggle}>
+                    <SideBarLink to="/react-product-app-vatanclone/home" onClick={toggle}>
                     Home
                     </SideBarLink>
-                    <SideBarLink to="/products" onClick={toggle}>
+                    <SideBarLink to="/react-product-app-vatanclone/products" onClick={toggle}>
                     Products
                     </SideBarLink>
-                    <SideBarLink to="/loginregister" onClick={toggle}>
+                    <SideBarLink to="/react-product-app-vatanclone/loginregister" onClick={toggle}>
                     Login/Register
                     </SideBarLink>
                 </SideBarMenu>
                 <SideBarBtnWrap>
-                <SideBarBtnLink to="/cart" onClick={toggle}>Checkout <FaShoppingCart/> <NavBtnLinkSpan>{productNumber}</NavBtnLinkSpan></SideBarBtnLink>
+                <SideBarBtnLink to="/react-product-app-vatanclone/cart" onClick={toggle}>Checkout <FaShoppingCart/> <NavBtnLinkSpan>{productNumber}</NavBtnLinkSpan></SideBarBtnLink>
                 </SideBarBtnWrap>
             </SideBarWrapper>
         </SideBarContainer>

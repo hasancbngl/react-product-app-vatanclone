@@ -24,7 +24,7 @@ export default class Sections extends Component {
     const productNumber = this.context.state.cart.length;
     const { isOpen } = this.context.state;
     const { toggle } = this.context;
-    const allProd = <Link to="/products"> <StyledH3>All Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
+    const allProd = <Link to="/react-product-app-vatanclone/products"> <StyledH3>All Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
     const centerStyle = {textAlign: "center"};
 
         return (
@@ -33,22 +33,22 @@ export default class Sections extends Component {
                 <SideBar productNumber={productNumber} isOpen={isOpen} toggle={toggle} />
                 <Navbar productNumber={productNumber} toggle= {toggle}/>
                 <Switch>
-                    <Route path="/home" exact>
+                    <Route path="/react-product-app-vatanclone/home" exact>
                         <ImageSlider slides={ImageSliderData}/>
                         <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
                         <BestSellerProducts number={13} featuredTitle= "Best Seller Products" allProducts={allProd} />
                         </Route>
-                        <Route path="/products">
+                        <Route path="/react-product-app-vatanclone/products">
                             <FeaturedProducts number={100} featuredTitle= "All Products"/>
                             <BestSellerProducts number={100} featuredTitle= "" />
                         </Route>
-                        <Route path="/loginregister">
+                        <Route path="/react-product-app-vatanclone/loginregister">
                             <StyledH2 style={centerStyle}>Register/ Login Page</StyledH2>
                         </Route>
-                        <Route path="/cart"> <Cart /> </Route>
-                        <Route path="/payment" component={Payment}/>
-                        <Route path="/:id" component={ItemDetails}/>
-                        <Route path="/" component={() => (<Redirect to='/home' />)} />
+                        <Route path="/react-product-app-vatanclone/cart"> <Cart /> </Route>
+                        <Route path="/react-product-app-vatanclone/payment" component={Payment}/>
+                        <Route path="/react-product-app-vatanclone/:id" component={ItemDetails}/>
+                        <Route path="/react-product-app-vatanclone/" component={() => (<Redirect to="/react-product-app-vatanclone/home" />)} />
                     </Switch>
                     <Footer />
             </Router>

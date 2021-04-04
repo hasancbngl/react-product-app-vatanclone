@@ -24,12 +24,12 @@ export default class FeaturedProducts extends Component {
                 products.map((product) =>{
                     if(Number(product.id) <number) {
                     items = <CardItemDiv key={product.id}>
-                        <Link to={`/${product.id}`}>
+                        <Link to={`/react-product-app-vatanclone/${product.id}`}>
                             <img src={product.src} alt={product.title}/>
                         </Link>
                         <>
                             <h3>
-                            <CardLink to={`/${product.id}`}>
+                            <CardLink to={`/react-product-app-vatanclone/${product.id}`}>
                                 {product.title}
                             </CardLink>
                             </h3>
