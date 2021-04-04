@@ -5,7 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = ({ toggle, productNumber }) => {
     return <>
     <Nav>
-        <NavLink to="/">
+        <NavLink to="/home">
             <h1>HasEl</h1>
         </NavLink>
         <Bars onClick={toggle}/>

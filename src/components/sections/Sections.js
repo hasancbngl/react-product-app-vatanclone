@@ -48,10 +48,7 @@ export default class Sections extends Component {
                         <Route path="/cart"> <Cart /> </Route>
                         <Route path="/payment" component={Payment}/>
                         <Route path="/:id" component={ItemDetails}/>
-                        <Route path="/">
-                            <StyledH2 style={centerStyle}>Welcome to my page</StyledH2>
-                            <StyledH3 style={{textAlign: "center", display: "block"}}>Happy Shopping</StyledH3>
-                            </Route>
+                        <Route path="/" component={() => (<Redirect to='/home' />)} />
                     </Switch>
                     <Footer />
             </Router>
