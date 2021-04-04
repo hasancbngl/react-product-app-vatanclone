@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-product-app-vatanclone/static/css/main.9d584c20.chunk.css",
-    "main.js": "/react-product-app-vatanclone/static/js/main.6c357495.chunk.js",
-    "main.js.map": "/react-product-app-vatanclone/static/js/main.6c357495.chunk.js.map",
-    "runtime-main.js": "/react-product-app-vatanclone/static/js/runtime-main.3e3f31f7.js",
-    "runtime-main.js.map": "/react-product-app-vatanclone/static/js/runtime-main.3e3f31f7.js.map",
-    "static/js/2.0b1b7bf6.chunk.js": "/react-product-app-vatanclone/static/js/2.0b1b7bf6.chunk.js",
-    "static/js/2.0b1b7bf6.chunk.js.map": "/react-product-app-vatanclone/static/js/2.0b1b7bf6.chunk.js.map",
-    "static/js/3.d2d8a46b.chunk.js": "/react-product-app-vatanclone/static/js/3.d2d8a46b.chunk.js",
-    "static/js/3.d2d8a46b.chunk.js.map": "/react-product-app-vatanclone/static/js/3.d2d8a46b.chunk.js.map",
-    "index.html": "/react-product-app-vatanclone/index.html",
-    "static/css/main.9d584c20.chunk.css.map": "/react-product-app-vatanclone/static/css/main.9d584c20.chunk.css.map",
-    "static/js/2.0b1b7bf6.chunk.js.LICENSE.txt": "/react-product-app-vatanclone/static/js/2.0b1b7bf6.chunk.js.LICENSE.txt"
+    "main.css": "/react-product-app-vatanclone/home/static/css/main.9d584c20.chunk.css",
+    "main.js": "/react-product-app-vatanclone/home/static/js/main.6c357495.chunk.js",
+    "main.js.map": "/react-product-app-vatanclone/home/static/js/main.6c357495.chunk.js.map",
+    "runtime-main.js": "/react-product-app-vatanclone/home/static/js/runtime-main.5ca58ece.js",
+    "runtime-main.js.map": "/react-product-app-vatanclone/home/static/js/runtime-main.5ca58ece.js.map",
+    "static/js/2.1b9e37dd.chunk.js": "/react-product-app-vatanclone/home/static/js/2.1b9e37dd.chunk.js",
+    "static/js/2.1b9e37dd.chunk.js.map": "/react-product-app-vatanclone/home/static/js/2.1b9e37dd.chunk.js.map",
+    "static/js/3.d2d8a46b.chunk.js": "/react-product-app-vatanclone/home/static/js/3.d2d8a46b.chunk.js",
+    "static/js/3.d2d8a46b.chunk.js.map": "/react-product-app-vatanclone/home/static/js/3.d2d8a46b.chunk.js.map",
+    "index.html": "/react-product-app-vatanclone/home/index.html",
+    "static/css/main.9d584c20.chunk.css.map": "/react-product-app-vatanclone/home/static/css/main.9d584c20.chunk.css.map",
+    "static/js/2.1b9e37dd.chunk.js.LICENSE.txt": "/react-product-app-vatanclone/home/static/js/2.1b9e37dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e3f31f7.js",
-    "static/js/2.0b1b7bf6.chunk.js",
+    "static/js/runtime-main.5ca58ece.js",
+    "static/js/2.1b9e37dd.chunk.js",
     "static/css/main.9d584c20.chunk.css",
     "static/js/main.6c357495.chunk.js"
   ]
