@@ -13,6 +13,7 @@ import Payment from '../payment/Payment';
 import ImageSlider from '../imageSlider/ImageSlider';
 import { ImageSliderData } from '../imageSlider/ImageSliderData';
 import Footer from '../footer/Footer';
+import SideBar from '../sideBar/SideBar';
 
 
 export default class Sections extends Component {
@@ -24,6 +25,7 @@ export default class Sections extends Component {
         return (
             <div className="Sections">
         <Router>
+            <SideBar />
             <Navbar productNumber={productNumber} />
             <Switch>
                 <Route path="/home" exact>

@@ -6,7 +6,7 @@ const Navbar = (props) => {
     return <>
     <Nav>
         <NavLink to="/">
-            <h1>VatanClone</h1>
+            <h1>HasEl</h1>
         </NavLink>
         <Bars />
         <NavMenu>
@@ -21,7 +21,7 @@ const Navbar = (props) => {
             </NavLink>
         </NavMenu>
         <NavBtn>
-            <NavBtnLink to="/cart"><FaShoppingCart/> <NavBtnLinkSpan>{props.productNumber}</NavBtnLinkSpan></NavBtnLink>
+            <NavBtnLink to="/cart"> Checkout <FaShoppingCart/> <NavBtnLinkSpan>{props.productNumber}</NavBtnLinkSpan></NavBtnLink>
         </NavBtn>
     </Nav>
         </>
