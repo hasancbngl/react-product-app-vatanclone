@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-product-app-vatanclone/static/css/main.9d584c20.chunk.css",
-    "main.js": "/react-product-app-vatanclone/static/js/main.86bbbe1a.chunk.js",
-    "main.js.map": "/react-product-app-vatanclone/static/js/main.86bbbe1a.chunk.js.map",
+    "main.js": "/react-product-app-vatanclone/static/js/main.10f9c149.chunk.js",
+    "main.js.map": "/react-product-app-vatanclone/static/js/main.10f9c149.chunk.js.map",
     "runtime-main.js": "/react-product-app-vatanclone/static/js/runtime-main.3e3f31f7.js",
     "runtime-main.js.map": "/react-product-app-vatanclone/static/js/runtime-main.3e3f31f7.js.map",
     "static/js/2.ae5db811.chunk.js": "/react-product-app-vatanclone/static/js/2.ae5db811.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3e3f31f7.js",
     "static/js/2.ae5db811.chunk.js",
     "static/css/main.9d584c20.chunk.css",
-    "static/js/main.86bbbe1a.chunk.js"
+    "static/js/main.10f9c149.chunk.js"
   ]
 }
