@@ -29,7 +29,6 @@ export default class Sections extends Component {
                     <ImageSlider slides={ImageSliderData}/>
                     <FeaturedProducts number={6} featuredTitle= "Featured Products" allProducts={allProd} />
                     <BestSellerProducts number={13} featuredTitle= "Best Seller Products" allProducts={allProd} />
-                    <Footer />
                 </Route>
                 <Route path="/products">
                         <FeaturedProducts number={100} featuredTitle= "All Products"/>
@@ -46,6 +45,7 @@ export default class Sections extends Component {
                      <StyledH3 style={{textAlign: "center", display: "block"}}>Happy Shopping</StyledH3>
                 </Route>
             </Switch>
+            <Footer />
         </Router>
         );
     }

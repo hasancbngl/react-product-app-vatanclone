@@ -44,7 +44,7 @@ export const TotalDiv = styled.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   overflow-x: hidden;
+   overflow: hidden;
 
    a {
       text-decoration: none;

@@ -93,6 +93,7 @@ export const CardLink = styled(Link)`
    text-decoration: none;
    color: #333;
    text-align: center;
+   font-size: 15px;
    &:hover {
       transform: scaleX(0.5);
       color:#16697a;
