@@ -1,5 +1,5 @@
 import {React, Component} from 'react';
-import { Switch, Route, Link} from 'react-router-dom';
+import { Switch, Route, Link, Redirect} from 'react-router-dom';
 import { StyledSpan, StyledH3, StyledH2 } from '../featuredProducts/featuredProductsStyling';
 import { MdArrowForward } from 'react-icons/md';
 import FeaturedProducts from '../featuredProducts/featuredProducts';
