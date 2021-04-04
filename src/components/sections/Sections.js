@@ -22,6 +22,7 @@ export default class Sections extends Component {
     console.log('prodN:',productNumber);
     const allProd = <Link to="/products"> <StyledH3>All Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
         return (
+            <div className="Sections">
         <Router>
             <Navbar productNumber={productNumber} />
             <Switch>
@@ -47,6 +48,7 @@ export default class Sections extends Component {
             </Switch>
             <Footer />
         </Router>
+        </div>
         );
     }
 }
