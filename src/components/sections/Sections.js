@@ -18,15 +18,24 @@ import SideBar from '../sideBar/SideBar';
 
 export default class Sections extends Component {
     static contextType = DataConText;
+
+    state= {
+        isOpen: false
+    }
+
     render() {
     const productNumber = this.context.state.cart.length;
-    console.log('prodN:',productNumber);
     const allProd = <Link to="/products"> <StyledH3>All Products <StyledSpan><MdArrowForward /></StyledSpan> </StyledH3> </Link>;
+
+    const toggle=() => {
+        this.setState({isOpen: !this.state.isOpen});
+    };
+
         return (
             <div className="Sections">
         <Router>
-            <SideBar />
-            <Navbar productNumber={productNumber} />
+            <SideBar isOpen={this.state.isOpen} toggle={toggle} />
+            <Navbar productNumber={productNumber} toggle= {toggle}/>
             <Switch>
                 <Route path="/home" exact>
                     <ImageSlider slides={ImageSliderData}/>

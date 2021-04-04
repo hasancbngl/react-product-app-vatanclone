@@ -2,13 +2,13 @@ import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavBtnLinkSpan} from './NavbarElements';
 import { FaShoppingCart } from "react-icons/fa";
 
-const Navbar = (props) => {
+const Navbar = ({ toggle, productNumber }) => {
     return <>
     <Nav>
         <NavLink to="/">
             <h1>HasEl</h1>
         </NavLink>
-        <Bars />
+        <Bars onClick={toggle}/>
         <NavMenu>
             <NavLink to="/home">
                 Home
@@ -21,7 +21,7 @@ const Navbar = (props) => {
             </NavLink>
         </NavMenu>
         <NavBtn>
-            <NavBtnLink to="/cart"> Checkout <FaShoppingCart/> <NavBtnLinkSpan>{props.productNumber}</NavBtnLinkSpan></NavBtnLink>
+            <NavBtnLink to="/cart"> Checkout <FaShoppingCart/> <NavBtnLinkSpan>{productNumber}</NavBtnLinkSpan></NavBtnLink>
         </NavBtn>
     </Nav>
         </>

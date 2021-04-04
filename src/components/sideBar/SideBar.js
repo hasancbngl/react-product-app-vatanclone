@@ -1,29 +1,29 @@
 import React from 'react';
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from 'react-icons/fa';
+import { NavBtnLinkSpan } from '../Navbar/NavbarElements';
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, 
-    SideBarMenu, SideBarBtnWrap,SideBarBtnLink, 
-    SideBarLink, SideBarBtnLinkSpan } from './SideBarStyles';
+    SideBarMenu, SideBarBtnWrap,SideBarBtnLink, SideBarLink } from './SideBarStyles';
 
-const SideBar = () => {
+const SideBar = ({ isOpen, toggle }) => {
     return (
-        <SideBarContainer>
+        <SideBarContainer isOpen = {isOpen} onClick={toggle}>
             <Icon>
-                <CloseIcon />
+                <CloseIcon onClick={toggle}/>
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="/home">
+                    <SideBarLink to="/home" onClick={toggle}>
                     Home
                     </SideBarLink>
-                    <SideBarLink to="/products">
+                    <SideBarLink to="/products" onClick={toggle}>
                     Products
                     </SideBarLink>
-                    <SideBarLink to="/loginregister">
+                    <SideBarLink to="/loginregister" onClick={toggle}>
                     Login/Register
                     </SideBarLink>
                 </SideBarMenu>
                 <SideBarBtnWrap>
-                <SideBarBtnLink to="/cart">Checkout <FaShoppingCart/> <SideBarBtnLinkSpan>0</SideBarBtnLinkSpan></SideBarBtnLink>
+                <SideBarBtnLink to="/cart" onClick={toggle}>Checkout <FaShoppingCart/> <NavBtnLinkSpan>0</NavBtnLinkSpan></SideBarBtnLink>
                 </SideBarBtnWrap>
             </SideBarWrapper>
         </SideBarContainer>
