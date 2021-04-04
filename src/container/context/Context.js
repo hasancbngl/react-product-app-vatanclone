@@ -306,7 +306,8 @@ export default class DataProvider extends Component {
             },
         ],
         cart: [],
-        totalPrice: 0
+        totalPrice: 0,
+        isOpen: false
     };
 
     addToCart = id => {
@@ -368,6 +369,10 @@ export default class DataProvider extends Component {
             this.setState({cart: cart});
             this.calculateTotalPrice();
         }
+    };
+
+    toggle=() => {
+        this.setState({isOpen: !this.state.isOpen});
     };
 
     componentDidUpdate() {

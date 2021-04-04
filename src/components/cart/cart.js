@@ -14,7 +14,9 @@ export default class Cart extends Component {
     }
 
     render() {
-        const cart = this.context.state.cart;
+        const { cart, totalPrice } = this.context.state;
+        const { reduceAmount, increaseAmount, removeProduct} = this.context;
+
          if(cart.length===0) {
            return <StyledH2 style={{textAlign:"center"}}>No product!</StyledH2>
         } else {
@@ -36,18 +38,18 @@ export default class Cart extends Component {
                         <Colors colors={item.colors}/>
                         <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut. Ut posuere fermentum elit, eget aliquet ante consectetur quis. Quisque magna ipsum, molestie ac elit eu, tempor dictum urna.</p>
                         <>
-                            <CountButton onClick={()=> this.context.reduceAmount(item.id)}>-</CountButton>
+                            <CountButton onClick={()=>reduceAmount(item.id)}>-</CountButton>
                             <CountSpan>{item.count}</CountSpan>
-                            <CountButton onClick={()=> this.context.increaseAmount(item.id)}>+</CountButton>
+                            <CountButton onClick={()=>increaseAmount(item.id)}>+</CountButton>
                         </>
                         </>
-                        <DeleteButton onClick={()=> this.context.removeProduct(item.id)}>X</DeleteButton>
+                        <DeleteButton onClick={()=>removeProduct(item.id)}>X</DeleteButton>
                     </CardItemDiv>
                     ))
                     }
                     <TotalDiv>
                     <Link to="/payment">Payment</Link>
-                    <h3>Total:₺ {this.context.state.totalPrice}</h3>
+                    <h3>Total:₺ {totalPrice}</h3>
                    </TotalDiv>
                 </>
                 )

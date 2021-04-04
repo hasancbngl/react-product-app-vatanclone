@@ -7,19 +7,22 @@ export default class FeaturedProducts extends Component {
     static contextType = DataConText;
 
     render() {
-        const products = this.context.state.products;
+        const { products } = this.context.state;
+        const { featuredTitle, allProducts, number } = this.props;
         let items;
+        const { addToCart } = this.context;
+
         return (
             <>
             <Header>
-             <StyledH2>{this.props.featuredTitle}</StyledH2>
-             {this.props.allProducts}
+             <StyledH2>{featuredTitle}</StyledH2>
+             {allProducts}
              </Header>
         <MainDiv>
         <ProductsDiv>
             {
                 products.map((product) =>{
-                    if(Number(product.id) <this.props.number) {
+                    if(Number(product.id) <number) {
                     items = <CardItemDiv key={product.id}>
                         <Link to={`/${product.id}`}>
                             <img src={product.src} alt={product.title}/>
@@ -31,7 +34,7 @@ export default class FeaturedProducts extends Component {
                             </CardLink>
                             </h3>
                             <StyledSpan >₺{product.price}</StyledSpan>
-                            <CardButton onClick={()=> this.context.addToCart(product.id)}>Add to Card</CardButton>
+                            <CardButton onClick={()=>addToCart(product.id)}>Add to Card</CardButton>
                         </>
                     </CardItemDiv>
                     return items;

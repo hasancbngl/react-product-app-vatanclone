@@ -9,17 +9,20 @@ export default class BestSellerProducts extends Component {
     render() {
         const products = this.context.state.bestSellerProducts;
         let items;
+        const { allProducts, featuredTitle, number } = this.props;
+        const { addToCart } = this.context;
+
         return (
             <>
              <Header>
-             <StyledH2>{this.props.featuredTitle}</StyledH2>
-             {this.props.allProducts}
+             <StyledH2>{featuredTitle}</StyledH2>
+             {allProducts}
              </Header>
         <MainDiv>
         <ProductsDiv>
             {
                 products.map((product) =>{
-                    if(Number(product.id) <this.props.number) {
+                    if(Number(product.id) <number) {
                     items = <CardItemDiv key={product.id}>
                         <Link to={`/${product.id}`}>
                             <img src={product.src} alt={product.title}/>
@@ -31,7 +34,7 @@ export default class BestSellerProducts extends Component {
                             </CardLink>
                             </h3>
                             <StyledSpan >₺{product.price}</StyledSpan>
-                            <CardButton onClick={()=> this.context.addToCart(product.id)}>Add to Card</CardButton>
+                            <CardButton onClick={()=>addToCart(product.id)}>Add to Card</CardButton>
                         </>
                     </CardItemDiv>
                     return items;

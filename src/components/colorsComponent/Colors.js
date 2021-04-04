@@ -3,7 +3,7 @@ import { ColorsButton } from './ColorsStyles';
 
 export default class Colors extends Component {
     render() {
-        const colors = this.props.colors;
+        const { colors } = this.props;
         return (
             <div>
                 {

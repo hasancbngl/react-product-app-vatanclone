@@ -12,9 +12,11 @@ export default class ItemDetails extends Component {
     }
 
     getProduct=() => {
-        const id = this.props.match.params.id;
+        const { id } = this.props.match.params;
+        const { products, bestSellerProducts} = this.context.state;
+
         if(id) {
-            const res = id <10 ? this.context.state.products : this.context.state.bestSellerProducts;
+            const res = id <10 ? products : bestSellerProducts;
             const data = res.filter(item=> {
                 return item.id === id;
             });
@@ -27,7 +29,8 @@ export default class ItemDetails extends Component {
     }
 
     render() {
-        const product = this.state.product;
+        const { product } = this.state;
+        const { addToCart } = this.context;
         return (
             <MainStyle>
         {
@@ -41,7 +44,7 @@ export default class ItemDetails extends Component {
                         </div>
                         <Colors colors={item.colors}/>
                         <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut.</p>
-                        <Link to={`/cart`} onClick={()=> this.context.addToCart(item.id)}>
+                        <Link to={`/cart`} onClick={()=>addToCart(item.id)}>
                             <StyledButton>Add to Card</StyledButton>
                         </Link>
                     </>
