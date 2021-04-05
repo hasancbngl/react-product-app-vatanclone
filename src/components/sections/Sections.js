@@ -7,7 +7,7 @@ import ItemDetails from '../../container/ItemDetails/ItemDetails';
 import Cart from '../cart/cart';
 import BestSellerProducts from '../bestSellerProducts/BestSellerProducts';
 import Navbar from '../Navbar/Navbar';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 import {DataConText} from '../../container/context/Context';
 import Payment from '../payment/Payment';
 import ImageSlider from '../../container/imageSlider/ImageSlider';
