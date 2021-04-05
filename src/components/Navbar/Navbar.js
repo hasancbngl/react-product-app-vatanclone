@@ -5,23 +5,23 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = ({ toggle, productNumber }) => {
     return <>
     <Nav>
-        <NavLink to="/react-product-app-vatanclone/home">
+        <NavLink to="/home">
             <h1>HasEl</h1>
         </NavLink>
         <Bars onClick={toggle}/>
         <NavMenu>
-            <NavLink to="/react-product-app-vatanclone/home">
+            <NavLink to="/home">
                 Home
             </NavLink>
-            <NavLink to="/react-product-app-vatanclone/products">
+            <NavLink to="/products">
                 Products
             </NavLink>
-            <NavLink to="/react-product-app-vatanclone/loginregister">
+            <NavLink to="/loginregister">
                 Login/Register
             </NavLink>
         </NavMenu>
         <NavBtn>
-            <NavBtnLink to="/react-product-app-vatanclone/cart"> Checkout <FaShoppingCart/> <NavBtnLinkSpan>{productNumber}</NavBtnLinkSpan></NavBtnLink>
+            <NavBtnLink to="/cart"> Checkout <FaShoppingCart/> <NavBtnLinkSpan>{productNumber}</NavBtnLinkSpan></NavBtnLink>
         </NavBtn>
     </Nav>
         </>

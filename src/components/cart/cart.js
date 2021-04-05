@@ -29,7 +29,7 @@ export default class Cart extends Component {
                         <>
                         <div>
                             <h3>
-                            <CardLink to={`react-product-app-vatanclone/${item.id}`}>
+                            <CardLink to={`/${item.id}`}>
                                 {item.title}
                             </CardLink>
                             </h3>
@@ -48,7 +48,7 @@ export default class Cart extends Component {
                     ))
                     }
                     <TotalDiv>
-                    <Link to="/react-product-app-vatanclone/payment">Payment</Link>
+                    <Link to="/payment">Payment</Link>
                     <h3>Total:₺ {totalPrice}</h3>
                    </TotalDiv>
                 </>
