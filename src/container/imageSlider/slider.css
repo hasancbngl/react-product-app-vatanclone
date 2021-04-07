@@ -2,9 +2,11 @@
     margin: 1.5vh 2vw;
     position: relative;
     display: flex;
+    height: 250px;
     justify-content: center;
     align-items: center;
     padding: 1vw;
+    overflow: hidden;
 }
 
 .image {

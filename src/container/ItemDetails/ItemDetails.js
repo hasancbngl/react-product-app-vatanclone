@@ -45,7 +45,7 @@ export default class ItemDetails extends Component {
                         <Colors colors={item.colors}/>
                         <p>Morbi in ligula lacus. Cras feugiat lacus ipsum, quis gravida elit commodo ut.</p>
                         <Link to={`/react-product-app-vatanclone/cart`} onClick={()=>addToCart(item.id)}>
-                            <StyledButton>Add to Card</StyledButton>
+                            <StyledButton>Add to Cart</StyledButton>
                         </Link>
                     </>
                 </CardItemDiv>

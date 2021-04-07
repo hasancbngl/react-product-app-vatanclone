@@ -34,7 +34,7 @@ export default class FeaturedProducts extends Component {
                             </CardLink>
                             </h3>
                             <StyledSpan >₺{product.price}</StyledSpan>
-                            <CardButton onClick={()=>addToCart(product.id)}>Add to Card</CardButton>
+                            <CardButton onClick={()=>addToCart(product.id)}>Add to Cart</CardButton>
                         </>
                     </CardItemDiv>
                     return items;
